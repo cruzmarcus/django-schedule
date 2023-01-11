@@ -13,12 +13,17 @@ python = "^3.10"
 [tool.poetry.group.dev.dependencies]
 black = "^22.10.0"
 isort = "^5.10.1"
+mypy = "^0.991"
+flake8 = "^6.0.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.black]
+line-length = 88
+
 [toml.isort]
-length_line = 79
+line_length = 88
 black = "profile"
